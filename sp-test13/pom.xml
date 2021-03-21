@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
-	<artifactId>sp11</artifactId>
-	<name>sp-test11</name>
+	<artifactId>sp12</artifactId>
+	<name>sp-test13</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
-	<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>	
+	<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
 		<java-version>1.8</java-version>
 		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
@@ -118,61 +118,55 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<!-- 오라클 접속 -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>3.1.1.RELEASE</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
-<dependency>
-    <groupId>com.oracle.database.jdbc</groupId>
-    <artifactId>ojdbc8</artifactId>
-    <version>19.7.0.0</version>
-</dependency>
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.7.0.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+			<scope>provided</scope>
+		</dependency>	
+		
+		<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-jdbc</artifactId>
-    <version>3.1.1.RELEASE</version>
-</dependency>
-
-<!-- 롬북 -->
-<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.12</version>
-    <scope>provided</scope>
-</dependency>
-
-<!-- 잭슨 -->
-<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
-<dependency>
-    <groupId>org.codehaus.jackson</groupId>
-    <artifactId>jackson-core-asl</artifactId>
-    <version>1.9.13</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
-<dependency>
-    <groupId>org.codehaus.jackson</groupId>
-    <artifactId>jackson-mapper-asl</artifactId>
-    <version>1.9.13</version>
-</dependency>
-
-<!-- 하이버 -->
-<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-entitymanager</artifactId>
-    <version>4.3.1.Final</version>
-</dependency>
-
-<!-- 스프링 jsp -->
-<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.3.1.Final</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
 			<version>1.4.3.RELEASE</version>
 		</dependency>
-		
 		
 		        
 	</dependencies>

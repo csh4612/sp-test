@@ -12,7 +12,7 @@
 	
 	<!-- Application Loggers -->
 	<logger name="com.test.sp11">
-		<level value="info" />
+		<level value="debug" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
